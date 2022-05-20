@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="publisher" content="true" />
+	<meta name="wcmmode" content="DISABLED" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Neighborhood Garage Sale Planner</title>
+	<meta name="Keywords"
+		content="Brian Bixby, Neighborhood Garage Sale Planner, MERN Stack App, React Redux App, Best Javascript Developer Seattle, top 10 Full stack web developer Seattle" />
+	<meta name="Description"
+		content="Neighborhood Garage Sale Planner App by Brian Bixby - Full Stack Javascript Developer from Seattle, WA United States." />
+
+	<!-- <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1b3GAsyxngUUOi7Ek7g2hFL2NoPSM+6DkXGdw1DxBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbW/8CHF//dBhW//QUSe3/G17//xpc//8YWfz/FVTv/xFM2v8JMbX1C0K+dA9F0QIAAAAAAAAAAAAAAAAgZf8CIGf/niFp//8XTv//I2z//yNs//8iav//IGb//x1g//8ZWf7/DTnK/w9Iz/8LQr+eD0XRAgAAAAAAAAAAJG7/dCZy//8pd///H13//yx8//8se///Knj//yh0//8kbv//GVT//xdT+P8VVO7/D0jP/wxCv3QAAAAAKHX/GSl4//QugP//MH///y92//88kP//O47//zeK//8wgv//K3r//xtU//8haP//G13//xRS6v8ORsn0DUTEGCx+/3cxhf//PZH//zuI//9Flf//UKb//06k//9Jn///QZb//zKB//8iZf//JnH//yBm//8ZWv//Ek7e/w1Fxnczhv+6P5T//02k//9Lmv//Vqf//2S7//9iuf//W7L//1Gn//8xdf//Nor//yt6//8kbv//HWL//xVU7/8PSdG6LHL/3Eyi//9bs///Yrf//16t//930v//dc///23G//9arf//P4j//0GW//8xg///KHX//yBn//8ZWv//CzbC3C1w/9pVrP//Z8D//3fS//9ltf//iuj//4fk//981///T5n//1yz//9KoP//N4v//yt6//8ja///GVf//ww4ydpElv+6R5H//2/K//+C3v//cMH//579//+X9v//eM///2Cx//9iuv//T6b//zyR//8sff//JG7//xFB4v8VU+66TqX/d0mV//9nvf//heL//3TG//+o////nv3//2Sx//930///ZLz//1Cn//89kv//LH3//xhO//8bXf//Flb2d0yk/xhbtP/0UJv//3HI//9xw///mfj//3PF//981f//c87//2G6//9Opf//L3n//x5d//8ja///HGD/9BhZ/RgAAAAAVq//dWS+//87fP//ar3//3jR//9nuf//eNT//2a+//9Di///NHr//zCA//8qef//Imz//x1i/3QAAAAAAAAAAEmg/wI9hP+fYLj//12w//85eP//X7L//1mq//9Ejv//TaT//z6U//8vg///J3T//yFq/54cXv8CAAAAAAAAAAAAAAAASaD/Alex/3VBif/1XbX//0iU//8zdP//OYL//zB3//8mav//Hl3/9BdO/3cbXf8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATKP/GU+o/3c3f/+7RZ3/2j6U/9o1i/+6LoL/dyp6/xkAAAAAAAAAAAAAAAAAAAAA8A8AAMADAACAAQAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAIABAADAAwAA8A8AAA==" rel="icon" type="image/x-icon"> -->
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://* blob: data:; script-src  * 'unsafe-eval' 'unsafe-inline'; style-src 'self' https://*; child-src *; connect-src https://*;"> -->
+	<!-- <link rel="canonical" href="https://www.bracket-busters.us" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Neighborhood Garage Sale Planner App by Brian Bixby" />
+    <meta property="og:description" content="Full Stack Javascript Developer from Seattle, WA United States." />
+    <meta property="og:url" content="https://www.bracket-busters.us" />
+    <meta property="og:image" content="./components/helpers/assets/siteImage.png" />
+    <meta property="og:site_name" content="Neighborhood Garage Sale Planner" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Full Stack Javascript Developer from Seattle, WA United States." />
+    <meta name="twitter:title" content="Neighborhood Garage Sale Planner App by Brian Bixby" />
+    <meta name="twitter:image" content="./components/helpers/assets/siteImage.png" /> -->
+
+	<!-- <meta property="og:image" content="/assets/screenshot.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="192">
+    <meta property="og:image:height" content="105">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0b5338338e.js" crossorigin="anonymous"></script>
+    <meta property="og:description" content="Play games online with friends for free.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tic-tac-toe.css">
+    <link rel="stylesheet" href="/css/c4.css"> -->
+
+</head>
+
+<body>
+	<div id="root"></div>
+	<script src='./main.js'></script>
+</body>
+
+</html>
